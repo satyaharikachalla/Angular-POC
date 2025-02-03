@@ -1,0 +1,27 @@
+<div class="bg-white border shadow-md rounded-xl p-6 flex flex-col gap 6 relative">
+
+    <div class="auto">
+        <img src="{{productz.image}}" alt="{{productz.title}}" class="w-[200px] h-[100px] object-contain" />
+        <div class="flex flex-col fl mt-2">
+            <span class="text-md font-bold"> {{productz.title}}</span>
+            <span class="text-sm"> ${{productz.price}}</span>
+           
+            <app-primary-button class="mt-3"
+                (btnClicked)="cartService.addToCart(productz)"
+                label="Add to Cart">
+            </app-primary-button>
+
+        
+        </div>
+
+        <span class="absolute top-2 right-3   text-sm font-bold"
+            [class]="{'text-green-500': productz.stock, 'text-red-500': !productz.stock}">
+            @if (productz.stock) {
+            {{productz.stock}} left
+            } @else {
+            Out of Stock
+            }
+        </span>
+
+    </div>
+</div>
