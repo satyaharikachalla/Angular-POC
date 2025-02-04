@@ -17,13 +17,17 @@ ng generate pipe <pipe-name>: Creates a new pipe.
 ng generate directive <directive-name>: Creates a new directive.
 ### Development Server:
 ng serve: Starts the development server and watches for changes.
+
 ng serve --open (ng serve -o): Opens the application in the browser automatically.
 ### Building and Deployment:
 ng build: Builds the application for production.
+
 ng build --prod: Builds the application for production with optimizations.
 ### Testing:
 ng test: Runs unit tests and ng e2e: Runs end-to-end tests.
 ### Miscellaneous:
 ng version: Displays the Angular CLI version.
+
 ng help: Displays help information for a specific command.
+
 ng update: Updates Angular CLI and project dependencies.
